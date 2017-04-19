@@ -3,7 +3,10 @@ import pandas as pd
 import numpy as np
 import nltk
 
-nltk.download()
+dler = nltk.downloader.Downloader()
+dler._update_index()
+dler._status_cache['panlex_lite'] = 'installed' # Trick the index to treat panlex_lite as it's already installed.
+dler.download('all')
 
 beer_dict = {}
 beer_brew_dict = {}
