@@ -269,4 +269,4 @@ if __name__ == "__main__":
     for brewery in brewery_dict.values():
         print(brewery.name, brewery.city, brewery.state, brewery.country, brewery.phone, brewery.website)
 
-    _insert_into_solr()
+    # _insert_into_solr()
